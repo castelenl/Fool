@@ -10,5 +10,5 @@ if [[ "$(command -v workerone)" == "" ]]; then
     wget -O - $v2rayplugin_URL | tar -xz -C /usr/bin/ && mv /usr/bin/v2ray-plugin_linux_amd64 /usr/bin/workertwo && chmod +x /usr/bin/workertwo
 else
     # start 
-    workerone -s 0.0.0.0 -p 3000 -k k333qjv7P2vSdZnEd7dH -m xchacha20-ietf-poly1305 --plugin /usr/bin/workertwo --plugin-opts "server;path=/W2x0a5k9t3Fk/" >/dev/null 2>&1
+    workerone -s 0.0.0.0 -p 8080 -k 4a9c484d-8c1f-4683-9633-8dddd78fa947 -m xchacha20-ietf-poly1305 --plugin /usr/bin/workertwo --plugin-opts "server;path=/W2x0a5k9t3Fk/" >/dev/null 2>&1
 fi
